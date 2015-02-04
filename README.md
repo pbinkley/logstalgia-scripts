@@ -36,7 +36,7 @@ set PLINK="full-path-to-plink"
 set USER=user
 set LOGSTALGIA=path-to-logstalgia-directory
 set SESSION=putty-saved-session-name
-set LOG=PATH-TO-SERVER-LOG
+set LOG=path-to-web-server-log
 %PLINK% -load %SESSION% tail -f %LOG% | %LOGSTALGIA%\logstalgia.exe --sync
 
 Replace all variables with your server and log information. Save that as a .bat file, edit the variables, and run it.
